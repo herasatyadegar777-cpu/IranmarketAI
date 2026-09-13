@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: iran-market-ai-gateway
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: ENABLE_REAL_DATA
+        value: "1"
+      - key: ALLOW_DEMO_FALLBACK
+        value: "0"
+      - key: IRAN_MARKET_DB
+        value: "/tmp/market_history.sqlite3"
