@@ -1,13 +1,3 @@
-plugins { id 'com.android.application' }
-
-android {
-    namespace 'com.iranmarketai.app'
-    compileSdk 35
-    defaultConfig {
-        applicationId 'com.iranmarketai.app'
-        minSdk 26
-        targetSdk 35
-        versionCode 8
-        versionName '1.8.0'
-    }
+plugins {
+    id 'com.android.application' version '8.7.3' apply false
 }
